@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body style= "background-color:tomato; color:white; text-align:center; font-family:arial;">
+
+<?php
+$myColor = "Violet";
+print "<h2>" . $myColor. "</h2>";
+print("learn php at  $myColor");
+echo("This is awesome"). "<br>";
+var_dump($myColor) . "<br>";
+echo strlen('hello World');
+echo str_word_count("Hello How are you!");
+echo str_replace("World", "Mande", "Hello World");
+$a = 5;
+$b = 4;
+$c = 2.5;
+echo var_dump($a == $b);
+echo var_dump($a != $b);
+/* constant simmilar to var but cannot be chaned or undefined 
+   define(name value case-insentive) 
+*/
+define("greetings", "Welcome to Mande", true);
+echo greetings;
+
+# constant arrays 
+
+define(cars [
+"Kia", 
+"Toyota", 
+"Mazda",
+"Honda"
+]);
+echo cars[0];
+if($a > $b) {
+  echo "hello Mande Den";
+  }
+  var_dump(is_int($c));
+  var_dump(is_integer($b));
+  var_dump(is_long($a));
+  var_dump(is_nan($b));
+  echo"<h1>" ."Hello Manden" . "</h1>";
+  //"<br>"
+  #echo(round(0.70)); // round to nearest integer 
+  $myNumb = (rand(1, 20));
+  
+  if($myNumb >= 10) {
+     echo("Hey you pass the mark");
+} elseif($myNumb < 10) {
+  print("hey close but better luck next time");
+  }else {
+    echo("weldone for your efforts");
+    }
+
+print($myNumb);
+  
+
+?> 
+
+<div id = "tabs1" style = "background-color:white; width:200px; clear:; padding:10px; box-model:border-box; font-family:arial; color:black; height:200px; float:left; margin:10px;"> tabs1</div>
+
+<div id = "tabs2" style = "background-color:white; color:black; width:200px; clear:; height:200px; float:left; margin:10px;"> echo $myNumb </div>
+<div id = "tabs3" style = "background-color:white; width:200px; color:black; float:left; height:200px; margin:10px;"> tabs1</div>
+
+<script>
+ var  userName1 = prompt("what is your name");
+  document.getElementById("tabs1").innerHTML = userName1;
+   document.getElementById("tabs2").innerHTML = userName2;
+    document.getElementById("tabs3").innerHTML = userName3;
+</script>
+</body>
+</html>
